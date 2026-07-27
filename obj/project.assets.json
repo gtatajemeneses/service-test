@@ -7245,10 +7245,13 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/gerardo/Desktop/GetByCode/service-test/CategoryService.csproj",
+      "projectUniqueName": "/Users/gerardo/Desktop/GetByName/service-test/CategoryService.csproj",
       "projectName": "CategoryService",
       "projectPath": "/Users/gerardo/Desktop/GetByCode/service-test/CategoryService.csproj",
+      "projectPath": "/Users/gerardo/Desktop/GetByName/service-test/CategoryService.csproj",
       "packagesPath": "/Users/gerardo/.nuget/packages/",
       "outputPath": "/Users/gerardo/Desktop/GetByCode/service-test/obj/",
+      "outputPath": "/Users/gerardo/Desktop/GetByName/service-test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/gerardo/.nuget/NuGet/NuGet.Config"
