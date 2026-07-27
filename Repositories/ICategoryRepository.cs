@@ -4,6 +4,7 @@ public interface ICategoryRepository
 {
     Task<IEnumerable<Category>> GetAllAsync();
     Task<Category?> GetByIdAsync(string id);
+     Task<Category?> GetByCodeAsync(string code);
      Task<Category?> GetByNameAsync(string name);
     Task<Category> AddAsync(Category category);
     Task<Category?> UpdateAsync(string id, Category category);
