@@ -25,6 +25,13 @@ public class CategoryRepository:ICategoryRepository
                              .WithPartitionKey(id)
                              .FirstOrDefaultAsync(c => c.Id == id);
     }
+     public async Task<Category?> GetByCodeAsync(string code)
+    {
+    
+        return await _context.Categories
+                             
+                             .FirstOrDefaultAsync(c => c.CategoryCode == code);
+    }
 
     public async Task<Category> AddAsync(Category category)
     {
