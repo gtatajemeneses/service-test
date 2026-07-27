@@ -26,6 +26,14 @@ public class CategoryRepository:ICategoryRepository
                              .FirstOrDefaultAsync(c => c.Id == id);
     }
 
+     public async Task<Category?> GetByNameAsync(string name)
+    {
+        // En Cosmos, WithPartitionKey optimiza la búsqueda
+        return await _context.Categories
+                             
+                             .FirstOrDefaultAsync(c => c.Name == name);
+    }
+
     public async Task<Category> AddAsync(Category category)
     {
         _context.Categories.Add(category);
